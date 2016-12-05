@@ -9,6 +9,8 @@
 \usepackage{pbox}
 \usepackage{datetime}
 \usepackage[usenames,dvipsnames]{color}
+\usepackage{multicol}
+\usepackage[tracking=true]{microtype}
 
 \setlength{\parindent}{0pt}
 \setlength\extrarowheight{.5em}
@@ -71,7 +73,10 @@
 \begin{longtable}{@{}p{.2\textwidth} p{.8\textwidth}}
   09/2001 - 06/2010 &
   Dom-Gymnasium Freising (High School) \newline 
+  % squeeze this line a little bit
+  \SetTracking{encoding=*}{-10}\lsstyle
   Allgemeine Hochschulreife (Higher Education Entrance Qualification), grade: 1.0
+  \SetTracking{encoding=*}{0}\lsstyle
 \end{longtable}
 
 \subsection*{Community Service}
@@ -88,5 +93,64 @@
   from 09/2016 on &
   PreciBake GmbH, Munich (Industrial oven soft- and hardware) \newline 
   Software Developer (image processing, ROS)
+  \\
+  04/2015 - 06/2016 &
+  ImFusion GmbH, Munich (Medical image processing software) \newline 
+  Master thesis (noise filtering in computed tomography)
+  \\
+  12/2014 - 02/2015, \newline
+  06/2014 - 08/2014 &
+  Technische Universität München, Chair E17 (Biomedical Physics) \newline 
+  Student assistant (GUI development)
+  \\
+  01/2014 - 03/2014 &
+  TNG Technology Consulting, Unterföhring b. München \newline 
+  Intern (internal project)
+\end{longtable}
+
+\subsection*{Programming Languages}
+\begin{itemize}
+  \item Python (numpy, scipy, sk-learn, sk-image, unittest, matplotlib)
+  \item C/C++ (Eigen, fftw)
+  \item libraries/frameworks like Qt, OpenCV, ROS
+  \item Java 
+\end{itemize}
+
+\subsection*{Further knowledge of software and operating systems}
+\vspace*{-\baselineskip}
+\begin{multicols}{2}
+\begin{itemize}
+  \item GPGPU (OpenCL, Cuda)
+  \item Computer graphics (OpenGL)
+  \item VCS (git, svn)
+  \item \LaTeX
+  \item Linux, Bash
+  \item Windows
+\end{itemize}
+\end{multicols}
+
+\subsection*{Languages}
+\vspace*{-\baselineskip}
+\begin{multicols}{3}
+  \begin{itemize}
+    \item German (native)
+    \item English (fluent)
+    \item French (good)
+    \item Swedish (basic)
+    \item Spanish (basic)
+    \item Latin
+  \end{itemize}
+\end{multicols}
+
+\subsection*{Associations/Hobbies}
+\vspace*{-\baselineskip}
+\begin{longtable}{@{}p{.2\textwidth} p{.8\textwidth}}
+  2010 - now &
+  Student Theater Association KSE \newline 
+  Founding Member and Treasurer
+  \\
+  2004 - now &
+  Badminton Club Freising \newline 
+  Team Leader and Secretary (since 2009)
 \end{longtable}
 \end{document}
