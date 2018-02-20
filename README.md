@@ -1,7 +1,9 @@
-```
-$ tex --version | head -n2
-TeX 3.14159265 (TeX Live 2016)
-kpathsea version 6.2.2
-$ uname -srvpo
-Linux 4.4.0-47-generic #68-Ubuntu SMP Wed Oct 26 19:39:52 UTC 2016 x86_64 GNU/Linux
-```
+Compiled with TexLive 2016 and 2017.
+
+## Specifying personal data
+
+Fill the `personal_data.tex` stub for the CV header. Adjust the `\input` in `main.tex`.
+
+## Notes
+
+I use `latexmk` run by the `vimtex` plugin for automatic compilation while editing in Vim. Check out my [dotfiles](https://github.com/pylipp/dotfiles) for editor and tool configuration.
